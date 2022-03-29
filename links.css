@@ -1,0 +1,172 @@
+@font-face {
+    
+    
+    /*
+    font-family: 'permanent_markerregular';
+    src: url('fonts/permanentmarker/PermanentMarker.eot');
+    src: url('fonts/permanentmarker/PermanentMarker.eot?#iefix') format('embedded-opentype'),
+         url('fonts/permanentmarker/PermanentMarker.woff2') format('woff2'),
+         url('fonts/permanentmarker/PermanentMarker.woff') format('woff'),
+         url('fonts/permanentmarker/PermanentMarker.ttf') format('truetype'),
+         url('fonts/permanentmarker/PermanentMarker.svg#permanent_markerregular') format('svg');
+    */
+    
+    font-family: 'Audiowide';
+    src: url('files/fonts/Audiowide/Audiowide-Regular.ttf');
+    src: url('files/fonts/Audiowide/Audiowide-Regular.ttf') format('truetype'),
+
+ 
+
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #000000;
+  font-family: 'sans-serif';
+    font-weight: 450; /* original= lighter   normal and bold are nice too*/
+  background-color: #8790ab;
+  line-height: 1.7;
+}
+
+a:link, a:visited {
+  color: #060617;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  background-color: #80d4ff;
+  color: #050709;
+  text-decoration: none;
+}
+
+header {
+  background-color: #495269;
+  padding: 20px;
+  text-align: center;
+ color: #fefefe;
+font-family: "Audiowide", sans-serif;
+ font-size: 1.5em;
+}
+
+h1 a:link, h1 a:visited, h1 a:hover, h1 a:active {
+color: #fefefe;
+text-decoration: none;
+  background: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #667292;
+  border: 1px solid #000000;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  text-align: center;
+  color: #fefefe;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+h3, h4 {
+  margin: 0;
+  margin-top: 18px;
+  margin-bottom: 4px;
+  padding: 0;
+}
+
+h3 {
+background-color: #667292;
+padding: 10px;
+border: 1px solid #000000;
+color: #fefefe;
+}
+
+h4 {
+padding-left: 10px;
+font-size: larger;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+padding-left: 10px;
+}
+
+li {
+  display: inline;
+}
+
+li:after {
+  content: " "; //*     content: ", ";       #places comma after each link   *//
+}
+
+li:last-child:after {
+  content: "";
+}
+
+.alpha {
+  display: inline;
+}
+
+.alpha:after {
+  content: "";
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 15px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  padding-bottom: 0;
+  padding-top: 0;
+  }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+padding-left: 10px;
+}
+
+li {
+  display: block;
+}
+
+li:after {
+  content: "";
+}
+
+.alpha {
+  display: inline;
+}
+}
