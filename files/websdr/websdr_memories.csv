@@ -1,0 +1,43 @@
+freq,mode,label,lo,hi
+11175.00,USB,SkyKing Main (2.7kHz filter),0.14,2.87
+8992.00,USB,Sky King Main,0.27,2.97
+15016.00,USB,Sky King Backup,0.27,2.97
+13200.00,USB,Sky King Backup,0.27,2.97
+6739.00,USB,Sky King Backup,0.27,2.97
+4724.00,USB,Sky King Backup,0.14,2.87
+,-----,,,
+11226.00,USB,US Embassy ALE traffic,0.30,2.70
+11232.00,USB,CAN Trenton Military,0.30,2.70
+11217.00,USB,D DHM91 German Air Force,0.30,2.70
+11253.00,USB,G RAF Volmet,0.30,2.70
+,-----,,,
+4625.00,USB,UVB 76 (Russian # Stn),0.13,3.16
+6940.00,USB,Weird Tone Station (Numbers Stn),0.30,2.70
+5125.00,USB,Buran - Lost Russian Soldier,0.20,3.95
+7933.00,USB,Buran 2,0.20,3.95
+,-----,,,
+11580.00,AM,Pirate Radio?,-4.50,4.50
+6400.00,AM,Pirate Radio?,-4.50,4.50
+1620.20,AM,dutch pirate radio,-4.50,4.50
+,-----,,,
+7130.00,LSB,Russian Radio,-2.70,-0.30
+1413.00,AM,Russian Radio,-4.50,4.50
+7340.00,AM,Asian? Radio,-5.45,5.45
+7240.00,AM,Korean Radio,-4.50,4.50
+,-----,,,
+1008.00,AM,consistent jams,-4.50,4.50
+9775.00,AM,VOA,-4.50,4.50
+5780.16,AM,oldies,-4.50,4.50
+3975.00,AM,shortwaveradio.de,-4.50,4.50
+1359.00,AM, G Smooth Radio,-4.50,4.50
+7375.00,AM,Radio Romania,-4.50,4.50
+,-----,,,
+198.00,AM,BBC Radio 4,-4.50,4.50
+693.00,AM,BBC Radio 5,-4.50,4.50
+810.00,AM,BBC Radio Scotland,-4.50,4.50
+882.00,AM,BBC Radio Wales,-4.50,4.50
+5875.00,AMSYNC,BBC Radio,-4.50,4.50
+,-----,,,
+6010.00,AM,Vatican Radio,-4.50,4.50
+,-----,,,
+,-----,,,

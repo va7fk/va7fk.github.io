@@ -1,0 +1,3 @@
+freq,band,mode,label,lo,hi
+1700.00,0,AM,NA5B Radio 100mW,-3.46,3.45
+1160.00,0,AM,Catholic Radio WMET MD,-3.46,3.45

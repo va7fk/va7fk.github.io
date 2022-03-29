@@ -1,0 +1,51 @@
+Guide to decoding POCSAG on Linux
+
+https://warsug.info/viewtopic.php?t=15844
+Post by JhG123 » Sat Nov 09, 2019 11:33 am
+Guide for setting up POCSAG decoder on Linux
+Tested on Ubuntu 18.04.3 and macOS 10.15 Catalina with an RTL820T2 SDR.
+
+1.
+
+Code: Select all
+
+sudo apt update
+
+2.
+
+Code: Select all
+
+sudo apt install rtl_sdr netcat sox gqrx
+
+3. Clone this repository to the home folder
+
+Code: Select all
+
+git clone https://github.com/EliasOenal/multimon-ng.git
+
+and cd into it
+4. To build multimon-ng, follow these instructuctions, you will need make installed.
+
+Code: Select all
+
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+
+5. Launch GQRX and go to Tools>Remote Control Settings and set the port to 7355, and add localhost to the allowed hosts list.
+6. Attach your SDR and make sure GQRX is getting data, then tune to your intended paging frequency.
+7. Click the UDP button, located near the bottom right of the GQRX window.
+You'll want to set the Filter Width to about 11k and the mode to NFM, don't enable any noise blankers or AGC.
+8. Launch the terminal and paste
+
+Code: Select all
+
+nc -l -u localhost 7355 |     sox -t raw -esigned-integer -b 16 -r 48000 - -esigned-integer -b 16 -r 22050 -t raw - |     multimon-ng -t raw -a POCSAG512 -a POCSAG1200 -a POCSAG2400  -f alpha -
+
+8. If all has worked correctly, once GQRX recieves a signal, which will appear in the waterfall as 2 streams of data, multimon-ng will start to decode them.
+
+You may need to adjust some of the reciever settings to get a good signal, but it should work fine.
+
+Last edited by JhG123 on Mon Jun 29, 2020 8:39 am, edited 1 time in total. 
