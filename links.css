@@ -31,7 +31,7 @@ body {
   color: #dcdccc;
   font-family: 'sans-serif';
     font-weight: 450; /* original= lighter   normal and bold are nice too*/
-  background-color: #373737;
+  background-color: #262626;
   line-height: 1.7;
 }
 
@@ -41,13 +41,13 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-  background-color: #80d4ff;
+  background-color: #f8f893;
   color: #050709;
   text-decoration: none;
 }
 
 header {
-  background-color: #292d2f;
+  background-color: #262626;
   padding: 20px;
   text-align: center;
  color: #dcdccc;
@@ -72,7 +72,7 @@ footer {
 
 .topnav {
   overflow: hidden;
-  background-color: #595959;
+  background-color: #373737;
   border: 1px solid #000000;
 }
 
@@ -94,7 +94,7 @@ h3, h4 {
 }
 
 h3 {
-background-color: #595959;
+background-color: #373737;
 padding: 10px;
 border: 1px solid #000000;
 color: #dcdccc;
