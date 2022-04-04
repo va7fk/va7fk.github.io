@@ -28,7 +28,7 @@
 
 body {
   margin: 0;
-  color: #FFFFFF;
+  color: #d8dee9;
   font-family: 'sans-serif';
     font-weight: 450; /* original= lighter   normal and bold are nice too*/
   background-color: #2e3440;
@@ -80,7 +80,7 @@ footer {
   float: left;
   display: block;
   text-align: center;
-  color: #b8c0c7;
+  color: #d8dee9;
   padding: 14px 16px;
   text-decoration: none;
 
@@ -97,7 +97,7 @@ h3 {
 background-color: #3b4252;
 padding: 10px;
 border: 1px solid #000000;
-color: #FFFFFFS;
+color: #d8dee9;
 }
 
 h4 {
