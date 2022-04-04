@@ -28,7 +28,7 @@
 
 body {
   margin: 0;
-  color: #ffffff;
+  color: #dcdccc;
   font-family: 'sans-serif';
     font-weight: 450; /* original= lighter   normal and bold are nice too*/
   background-color: #292d2f;
@@ -50,13 +50,13 @@ header {
   background-color: #292d2f;
   padding: 20px;
   text-align: center;
- color: #fefefe;
+ color: #dcdccc;
 font-family: "Audiowide", sans-serif;
  font-size: 1.5em;
 }
 
 h1 a:link, h1 a:visited, h1 a:hover, h1 a:active {
-color: #fefefe;
+color: #dcdccc;
 text-decoration: none;
   background: none;
 }
@@ -97,7 +97,7 @@ h3 {
 background-color: #595959;
 padding: 10px;
 border: 1px solid #000000;
-color: #fefefe;
+color: #dcdccc;
 }
 
 h4 {
