@@ -28,29 +28,29 @@
 
 body {
   margin: 0;
-  color: #dcdccc;
+  color: #FFFFFF;
   font-family: 'sans-serif';
     font-weight: 450; /* original= lighter   normal and bold are nice too*/
-  background-color: #262626;
+  background-color: #2e3440;
   line-height: 1.7;
 }
 
 a:link, a:visited {
-  color: #dfaf8f;
+  color: #9ba6b0;
   text-decoration: none;
 }
 
 a:hover, a:active {
-  background-color: #f8f893;
+  background-color: #81a1c1;
   color: #050709;
   text-decoration: none;
 }
 
 header {
-  background-color: #262626;
+  background-color: #24292d;
   padding: 20px;
   text-align: center;
- color: #dcdccc;
+ color: #b8c0c7;
 font-family: "Audiowide", sans-serif;
  font-size: 1.5em;
 }
@@ -72,7 +72,7 @@ footer {
 
 .topnav {
   overflow: hidden;
-  background-color: #373737;
+  background-color: #3b4252;
   border: 1px solid #000000;
 }
 
@@ -80,7 +80,7 @@ footer {
   float: left;
   display: block;
   text-align: center;
-  color: #fefefe;
+  color: #b8c0c7;
   padding: 14px 16px;
   text-decoration: none;
 
@@ -94,10 +94,10 @@ h3, h4 {
 }
 
 h3 {
-background-color: #373737;
+background-color: #3b4252;
 padding: 10px;
 border: 1px solid #000000;
-color: #dcdccc;
+color: #FFFFFFS;
 }
 
 h4 {
