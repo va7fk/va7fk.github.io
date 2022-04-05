@@ -37,6 +37,32 @@
 
   <hr>
       
+	     
+	    
+	    	<hr style="height:5px; visibility:hidden;" />
+	<div id="clockbox" style="text-align:left; font:24pt sans-serif; color:#000000;"></div>
+	<script type="text/javascript">
+		var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+		var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+		function GetClock(){
+			var d=new Date();
+			var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+			var nhour=d.getHours(),nmin=d.getMinutes();
+			if(nmin<=9) nmin="0"+nmin
+
+			var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+"";
+			document.getElementById('clockbox').innerHTML=clocktext;
+		}
+
+		GetClock();
+		setInterval(GetClock,1000);
+	</script>
+	    
+	    
+
+	    
+	    
     <h3>DMR Identification:</h3>
      <ul><b>
     <li>DMR ID: 3021414</li>
@@ -98,29 +124,6 @@
 -->
       
 <hr>
- 
-	    
-	    	<hr style="height:5px; visibility:hidden;" />
-	<div id="clockbox" style="text-align:center; font:35pt Courier; color:#555276;"></div>
-	<script type="text/javascript">
-		var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-		var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
-
-		function GetClock(){
-			var d=new Date();
-			var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
-			var nhour=d.getHours(),nmin=d.getMinutes();
-			if(nmin<=9) nmin="0"+nmin
-
-			var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+"";
-			document.getElementById('clockbox').innerHTML=clocktext;
-		}
-
-		GetClock();
-		setInterval(GetClock,1000);
-	</script>
-	    
-	    
 	    
 <hr style="height: 5px; visibility:hidden;" />
 <a href="links.html" title="VA7FK's Radio Web Directory"><img src="/images/hamrad1.png" width="90%"></a>
