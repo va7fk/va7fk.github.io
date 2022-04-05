@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width">
+  <title>Morse Code Trainer</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/foundation.min.css">
+  <script src="js/vendor/custom.modernizr.js"></script>
+  <style type="text/css">
+    span.token.good {
+      color: blue;
+    }
+    span.token.bad {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="row title">
+    <div class="large-12 columns">
+      <h1>Morse Code Trainer</h1>
+      <p class="firstelement"><a href="http://www.cwops.org/cwacademy.html">CWops</a>のロブ・ブラウンスタイン氏考案のカリキュラムを用いたモールス符号の受信と送信練習。ソフトウェア作成は<a href="http://scphillips.com">ステファン・C・フィリップス</a>氏による。</p>
+      <hr />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <form class="custom">
+        <fieldset id="data">
+          <legend>コールサイン</legend>
+          <div class="row">
+            <div class="large-12 columns">
+              <p>セッションの後半で必要となる自局情報です。この情報はサーバーに送信・保存されることはありません。</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <label for="callsign">コールサイン</label>
+              <input type="text" id="callsign" placeholder="セッション11以降で使います"/>
+            </div>
+            <div class="large-4 columns">
+              <label for="state">町／市(QTH)</label>
+              <input type="text" id="state" placeholder="セッション11で使います"/>
+            </div>
+            <div class="large-4 columns">
+              <label for="name">ナマエ（CWで使う）</label>
+              <input type="text" id="name" placeholder="セッション11で使います"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <label for="age">年齢</label>
+              <input type="text" id="age" placeholder="セッション12で使います"/>
+            </div>
+            <div class="large-4 columns">
+              <label for="power">送信出力</label>
+              <input type="text" id="power" placeholder="セッション12で使います"/>
+            </div>
+            <div class="large-4 columns">
+              <label for="antenna">アンテナ</label>
+              <input type="text" id="antenna" placeholder="セッション12で使います"/>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-9 columns">
+      <form class="custom">
+        <fieldset id="session">
+          <legend>セッション</legend>
+          <div class="row">
+            <div class="large-12 columns">
+              <p>セッションを選択して受信・送信のセグメントを練習してください。</p>
+              <a href="javascript: void(0);" class="button prev"><span class="btext">戻る</span> <i class="fa fa-step-backward"></i></a>
+              <span class="button fraction secondary"><span class="top"></span>/<span class="bot"></span></span>
+              <a href="javascript: void(0);" class="button next"><span class="btext">進む</span> <i class="fa fa-step-forward"></i></a>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset id="copying">
+          <legend>受信</legend>
+          <div class="row">
+            <div class="large-12 columns">
+              <p>音のパターンが認識できるまで各セグメントを何度も繰り返し再生してください。</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns panel">
+              <p class="message">Text to copy</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <a href="javascript: void(0);" class="button prev"><span class="btext">戻る</span> <i class="fa fa-step-backward"></i></a>
+              <span class="button fraction secondary"><span class="top"></span>/<span class="bot"></span></span>
+              <a href="javascript: void(0);" class="button next"><span class="btext">進む</span> <i class="fa fa-step-forward"></i></a>
+              <a href="javascript: void(0);" class="button play"><span class="btext">再生</span> <i class="fa fa-play"></i></a>
+              <a href="javascript: void(0);" class="button stop"><span class="btext">停止</span> <i class="fa fa-stop"></i></a>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset id="sending">
+          <legend>送信</legend>
+          <div class="row">
+            <div class="large-12 columns">
+              <p>セグメントを再生し、それを貴方のキーまたはキーヤ—で聞こえたとおりに真似て打ってください。送信した単語が正しいと感じるまで何回でも繰り返し練習してください。</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns panel">
+              <p class="message">Text to send</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <a href="javascript: void(0);" class="button prev"><span class="btext">戻る</span> <i class="fa fa-step-backward"></i></a>
+              <span class="button fraction secondary"><span class="top"></span>/<span class="bot"></span></span>
+              <a href="javascript: void(0);" class="button next"><span class="btext">進む</span> <i class="fa fa-step-forward"></i></a>
+              <a href="javascript: void(0);" class="button play"><span class="btext">再生</span> <i class="fa fa-play"></i></a>
+              <a href="javascript: void(0);" class="button stop"><span class="btext">停止</span> <i class="fa fa-stop"></i></a>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset id="freeform">
+          <legend>自由形式</legend>
+          <div class="row">
+            <div class="large-12 columns">
+              <p>他の内容で練習したい場合以下に入力してください。記号を使いたい場合は&lt;&gt;で括って（例：&lt;bk&gt;）、音声制御メニュー内のボタンをクリックしてください。</p>
+            </div>
+          </div>
+          <div class="row">
+                <input id="fmessage" type="text" placeholder="ここに自由に欧文記入" />
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <a href="javascript: void(0);" class="button play"><span class="btext">再生</span> <i class="fa fa-play"></i></a>
+              <a href="javascript: void(0);" class="button stop"><span class="btext">停止</span> <i class="fa fa-stop"></i></a>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="large-3 columns">
+      <fieldset>
+        <legend>音声制御</legend>
+        <label for="volume">音量 <span data-tooltip aria-haspopup="true" class="has-tip" title="あなたのPCの音量ボリュームを使うほうがよいかもしれません">(?)</span></label>
+        <input size="5" type="text" id="volume" value="0.5"/>
+        <label for="pitch">音程 / Hz <span data-tooltip aria-haspopup="true" class="has-tip" title="数字が大きいほど音程が高くなります。初期値は700です。">(?)</span></label>
+        <input size="5" type="text" id="pitch" value="700"/>
+        <label for="wpm">速度 / wpm <span data-tooltip aria-haspopup="true" class="has-tip" title="単語の分速で、'PARIS'という単語を基準にしています。">(?)</span></label>
+        <input size="5" type="text" id="wpm" name="wpm" value="30" onBlur="javascript:tieSpeeds()"/>
+        <label for="fwpm">ファンズワース速度 / wpm <span data-tooltip aria-haspopup="true" class="has-tip" title="ファンズワース速度は文字と単語のスペースを長めにすることで、 モールスを聞き取りやすくします。基準の速度より低い値を設定します。">(?)</span></label>
+        <input size="5" type="text" id="fwpm" name="fwpm" value="30" onBlur="javascript:tieSpeeds()"/>
+        <input type="checkbox" checked id="useprosigns" name="useprosigns"/>
+        <label for="useprosigns">記号使用 <span data-tooltip aria-haspopup="true" class="has-tip" title="記号はアルファベットの組み合わせで表します、例えば=は < BT >">(?)</span></label>
+      </fieldset>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <fieldset id="paypal">
+          <legend>寄付</legend>
+          <p>もしこのソフトウェアがお役にたちましたらプログラム作成者に少しの寄付をお願いします。</p>
+          <p><em>ありがとう！</em></p>
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="GMWHQ6FUKZTR4">
+          <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-6 columns">
+      <h4>注意</h4>
+      <p>本プログラムを正しく動かすにはJavaスクリプトを有効にしてください。Firefox または Chromeで動作確認済み（HTML 5 audio APIs対応バージョン）。Internet Explorer（Flash必要）では一部音声に不具合があります。</p>
+    </div>
+    <div class="large-6 columns">
+      <h4>オフライン版</h4>
+      <p>もし、この訓練ソフトをオフラインで使いたい場合は<a href="morse-trainer-offline.zip">ここからダウンロード</a>してください。ＤＬしたzipファイルを解凍して
+"index.html"をダブルクリック。ペイパルとは連動しません！（無料です）</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <p>このソフトウェアは<a href="https://github.com/grantgalitz/XAudioJS">XAudioJS</a>, <a href="http://foundation.zurb.com/">Foundation</a> および <a href="http://jquery.com/">jQuery</a> を使用しています。本ソフトウェアの著作権はステファン・C・フィリップスが保有します(2013-2015)。</p>
+    </div>
+  </div>
+
+  <script src="js/vendor/jquery.js"></script> 
+  <script src="js/foundation/foundation.js"></script>
+  <script src="js/foundation/foundation.tooltip.js"></script>
+
+  <script>
+  $(document).foundation();
+  </script>
+
+  <script type="text/javascript" src="js/audio/resampler.js"></script>
+  <script type="text/javascript" src="js/audio/swfobject.js"></script>
+  <script type="text/javascript" src="js/audio/XAudioServer.js"></script>
+  <script type="text/javascript" src="js/morse.js"></script>
+  <script type="text/javascript" src="js/sessions_jp.js"></script>
+  <script type="text/javascript" src="js/trainer.js"></script>
+</body>
+</html>
