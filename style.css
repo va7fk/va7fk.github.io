@@ -4,6 +4,7 @@ body {
   background-color: white;
   color: black;
   font-family: Courier;
+  font-weight:bold;
   margin:40px auto;
   max-width:650px;
   line-height:1.6;
