@@ -16,14 +16,14 @@ body {
 h1,h2,h3{line-height:1.}
 
 .button {
-        background-color: #4a4950;
+        background-color: #000000;
         border: none;
         color: white;
         padding: 20px 34px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 20px;
+        font-size: 22px;
         margin: 4px 2px;
         cursor: pointer;
       }
