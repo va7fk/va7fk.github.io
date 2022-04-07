@@ -15,4 +15,17 @@ body {
 
 h1,h2,h3{line-height:1.}
 
+.button {
+        background-color: #4a4950;
+        border: none;
+        color: white;
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
 /* Original font-family: Helvetica; font-size:19px; font-weight:normal;*/
