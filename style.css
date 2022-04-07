@@ -18,7 +18,7 @@ h1,h2,h3{line-height:1.}
 .button {
         background-color: white;
         border: dashed;
-        color: white;
+        color: black;
         padding: 20px 34px;
         text-align: center;
         text-decoration: none;
