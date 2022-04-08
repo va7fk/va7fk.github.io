@@ -28,13 +28,15 @@ body {
   margin: 0;
   color: #000000;
   font-family: 'sans-serif';
-    font-weight: 450; /* original= lighter   normal and bold are nice too*/
-  background-color: #8790ab;
+  font-weight: 450; /* original= lighter   normal and bold are nice too*/
+  background-color: #969eb6;
   line-height: 1.7;
 }
+/* original bg color  background-color: #8790ab; */
 
 a:link, a:visited {
   color: #000000;
+  font-weight: 550;
   text-decoration: none;
 }
 
