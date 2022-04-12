@@ -1,4 +1,5 @@
 /* CSS for va7fk index */
+
 @font-face {    
     font-family: 'Audiowide';
     src: url('files/fonts/michroma/Michroma.ttf');
@@ -10,11 +11,9 @@ body {
   color: black;
 /*    
   font-family: Courier;
-  font-weight:bold;
 */
   font-style: normal;
   font-weight:bold;
-  
   margin:40px auto;
   max-width:650px;
   line-height:1.6;
@@ -37,6 +36,3 @@ h1,h2,h3{line-height:1.}
         margin: 4px 2px;
         cursor: pointer;
       }
-
-/* Original font-family: Helvetica; font-size:19px; font-weight:normal;*/
-/* Button black background with white text no border: background-color: #000000; border: none; color: white;*/
