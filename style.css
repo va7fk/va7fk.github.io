@@ -3,10 +3,6 @@
     font-family: 'Audiowide';
     src: url('files/fonts/michroma/Michroma.ttf');
     src: url('files/fonts/michroma/Michroma.ttf') format('truetype'), 
-
-    font-weight: bold;
-    font-style: normal;
-    font-weight: 700;
 }
 
 body {
@@ -16,6 +12,9 @@ body {
   font-family: Courier;
   font-weight:bold;
 */
+  font-style: normal;
+  font-weight:bold;
+  
   margin:40px auto;
   max-width:650px;
   line-height:1.6;
