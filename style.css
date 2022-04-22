@@ -14,7 +14,7 @@ body {
 */
   font-style: normal;
   font-weight:bold;
-  font-size:1em;
+  font-size:1.1em;
   margin:40px auto;
   max-width:850px;
   line-height:1.6;
@@ -23,6 +23,10 @@ body {
 }
 
 h1,h2,h3{line-height:1.}
+
+h1 {
+  font-size: 1.2em;
+}
 
 .button {
         background-color: white;
