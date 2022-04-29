@@ -1,7 +1,7 @@
 # va7fk.github.io
 
-<ul>Website for VA7FK Amateur Radio Station.</ul>
+Website for VA7FK Amateur Radio Station.
 <br>
-https://va7fk.github.io/
+github pages: https://va7fk.github.io/
 <br>
-https://va7fk.tk
+website: https://va7fk.tk
