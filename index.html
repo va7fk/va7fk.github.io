@@ -1,104 +1,210 @@
 <!DOCTYPE html>
-<!-- va7fk website index -->
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="robots" content="noindex,nofollow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amateur Radio VA7FK</title>
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" type="image/png" href="/favicon.png">
-  
-  <!-- Talkgroup Drop Down Menu with Links -->
-  <script type="text/javascript">
-    function goToNewPage()
-    {
-        var url = document.getElementById('bm').value;
-        if(url != 'none') {
-            window.location = url;
-        }
-    }
-  </script>
-
-  </head>
-    <body>
-
-<h1>Amateur Radio Station VA7FK</h1>
-    <a href="/morse-trainer/index.html" title="VA7FK Amateur Radio" target="_blank"><img src="/images/morse1.png" alt="morse" width="55%"></a>
-    <p><b>VA7FK is a 100 Watt amateur radio station located in British Columbia, Canada. The station is also licensed under the callsign VE7JUR.</b><p>
-	    
-<h3>DMR Identification:</h3>
-    <ul><b>
-    <li>DMR ID: 3021414</li>
-    <li>DAPNET ID: VA7FK</li>
-    </b></ul>
-
-<h3>Monitored DMR Talkgroups:</h3>
-  <form>
-  <select name="bm" id="bm" accesskey="target" style="font-size: 0.7em">
-    <optgroup label = "BrandMeister">
-    <option value = "https://brandmeister.network/?page=lh&DestinationID=302">302: Canada Wide</option>
-    <option value = "https://brandmeister.network/?page=lh&DestinationID=3023">3023: Ontario Cross-Link</option>
-    <option value = "https://brandmeister.network/?page=lh&DestinationID=30236">30236: Canada Link</option>
-    <option value = "https://brandmeister.network/?page=lh&DestinationID=3027">3027: British Columbia</option>
-    <option value = "https://brandmeister.network/?page=lh&DestinationID=30271">30271: BC1 (British Columbia Rag Chew)</option>
-    <option value = "https://brandmeister.network/?page=lh&DestinationID=30272">30271: BC2</option>
-    <option value = "https://brandmeister.network/?page=lh&DestinationID=302024">302024: The 420 Network Ragchew</option>
-    <option value = "https://brandmeister.network/?page=lh&DestinationID=98009">98009: World Events</option>
-    <option value = "https://hose.brandmeister.network/">BrandMeister Hoseline</option>
-    <optgroup label = "TGIF">
-    <option value = "https://prime.tgif.network/tgprofile.php?id=110">110: North America</option>
-    <option value = "https://prime.tgif.network/tgprofile.php?id=113">113: World Wide English</option>
-    <option value = "https://prime.tgif.network/tgprofile.php?id=302">302: Canada</option>
-    <option value = "https://prime.tgif.network/tgprofile.php?id=420">420: Super Freq</option>
-    <option value = "https://prime.tgif.network/tgprofile.php?id=2021">2021: Free Speech Radio</option>
-    <option value = "https://prime.tgif.network/tgprofile.php?id=30214" selected>30214: VA7FK Personal Talkgroup</option>
-    <option value = "https://prime.tgif.network/tgprofile.php?id=31665">31665: DMR Talkgroup</option>
-    <option value = "https://tgif.network/lastheard.php">TGIF Last Heard</option>
-<!--    <option value = "31672" disabled>31672: Pi-Star Chat</option> -->
-  </select>
-    <input type=button value="Go" onclick="goToNewPage()" style="font-size: 0.7em"/>
-  </form>
-
-  <small>* talkgroups are not reliably monitored</small>
-
-<hr style="visibility:hidden;" />  
-<a href="https://form.jotform.com/201201516309138" class="button" method="get" target="_blank">Contact VA7FK</a>    
-<hr style="height: 1px; visibility:hidden;" />
-<hr>    
-<hr style="height: 5px; visibility:hidden;" />
-<a href="links.html" title="VA7FK's Radio Web Directory"><img src="/images/free_candy_van_directory.png" width="68%" align="center" ></a> <!-- /images/hamrad1.png -->
-<hr style="height: 10px; visibility:hidden;" />
-<a href="https://www.hamqsl.com/shortcut.html" title="Ham Solar Conditions" target="_blank" width="140%" heigth="140%" align="center" ><img src="https://www.hamqsl.com/solar101vhfper.php"></a>
-<hr style="height: 5px; visibility:hidden;" />
-<iframe src="https://widget.dxwatch.com/widget/widget1.php?s=Zmw9MSZwPTEmbD0xJmNhbGxzaWduPSZjYWxsdHlwZT1keCZmPTIwJnc9NjAwJmY9MjAmcj0xNQ==" width="600" height="415" align="middle" frameborder="0" scrolling="no"></iframe>
-
-  </body>
-</html>
-
-<!--  go away  -->
-
-	<!-- UTC CLOCK 
-	<hr style="height:5px; visibility:hidden;" />
-	<div id="clockbox" style="text-align:left; font:22pt Courier; color:#000000;"></div>
-	<script type="text/javascript">
-		var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-		var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
-		var tutc=["UTC"];
-		function GetClock(){
-			var d=new Date();
-			var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
-			var nhour=d.getHours(),nmin=d.getMinutes();
-			if(nmin<=9) nmin="0"+nmin
-
-			var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+" "+tutc+"";
-			document.getElementById('clockbox').innerHTML=clocktext;
+<head>
+	<meta charset="utf-8">
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+	<meta name="viewport" content="width=device-width">
+	<title>Morse Code Trainer</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/foundation.min.css">
+	<link href="/home/admin/Documents/Radio/CW/CWops/morse-trainer-offline/img/rocket.png" rel="icon" sizes="32x32" type="image/png">
+	<script src="js/vendor/custom.modernizr.js"></script>
+	<style type="text/css">
+		span.token.good {
+			color: blue;
 		}
+		span.token.bad {
+			color: red;
+		}
+	</style>
+</head>
+<body>
 
-		GetClock();
-		setInterval(GetClock,1000);
-	    </script>
-	<hr style="height: 1.5px; visibility:hidden;" />
-	<hr>	    
-	-->
+	<div class="row">
+		<div class="large-12 columns">
+			<h2>Morse Code Trainer</h2>
+			<p>Practise copying and sending Morse code using a scheme of sessions developed by Rob Brownstein of <a href="http://www.cwops.org/cwacademy.html">CWops</a>. The software is written by <a href="http://scphillips.com">Stephen C Phillips</a>. Please see the <a href="http://morsecode.scphillips.com">other Morse Code pages</a> on Stephen's website. This instance is hosted for personal use by <a href="https://va7fk.github.io/">VA7FK</a>.</p>
+			<hr />
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="large-12 columns">
+			<form class="custom">
+				<fieldset id="data">
+					<legend>Call Sign</legend>
+					<div class="row">
+						<div class="large-12 columns">
+							<p>For some of the sessions some additional information is needed.  This information is not transmitted to nor stored on the server.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-4 columns">
+							<label for="callsign">Your call sign:</label>
+							<input type="text" id="callsign" placeholder="For session 11 onwards"/>
+						</div>
+						<div class="large-4 columns">
+							<label for="state">Your town/city and state abbreviation:</label>
+							<input type="text" id="state" placeholder="For session 11"/>
+						</div>
+						<div class="large-4 columns">
+							<label for="name">Your name:</label>
+							<input type="text" id="name" placeholder="For session 11"/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-4 columns">
+							<label for="age">Your age:</label>
+							<input type="text" id="age" placeholder="For session 12"/>
+						</div>
+						<div class="large-4 columns">
+							<label for="power">Your power:</label>
+							<input type="text" id="power" placeholder="For session 12"/>
+						</div>
+						<div class="large-4 columns">
+							<label for="antenna">Your antenna:</label>
+							<input type="text" id="antenna" placeholder="For session 12"/>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="large-9 columns">
+			<form class="custom">
+				<fieldset id="session">
+					<legend>Session</legend>
+					<div class="row">
+						<div class="large-12 columns">
+							<p>Choose your session and then practise the copying and sending segments.</p>
+							<a href="javascript: void(0);" class="button prev">Previous</a>
+							<span class="button fraction secondary">Session <span class="top"></span>/<span class="bot"></span></span>
+							<a href="javascript: void(0);" class="button next">Next</a>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset id="copying">
+					<legend>Copying</legend>
+					<div class="row">
+						<div class="large-12 columns">
+							<p>Play each of these segments again and again until you feel you recognise the sound pattern.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-12 columns panel">
+							<p class="message">Text to copy</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-12 columns">
+							<a href="javascript: void(0);" class="button prev">Previous</a>
+							<span class="button fraction secondary">Segment <span class="top"></span>/<span class="bot"></span></span>
+							<a href="javascript: void(0);" class="button next">Next</a>
+							<a href="javascript: void(0);" class="button play">Play</a>
+							<a href="javascript: void(0);" class="button stop">Stop</a>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset id="sending">
+					<legend>Sending</legend>
+					<div class="row">
+						<div class="large-12 columns">
+							<p>Play a segment, then try to imitate it, exactly, using your key or keyer.  Repeat it as many times as it takes to feel that you’ve got the correct word pattern.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-12 columns panel">
+							<p class="message">Text to send</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-12 columns">
+							<a href="javascript: void(0);" class="button prev">Previous</a>
+							<span class="button fraction secondary">Segment <span class="top"></span>/<span class="bot"></span></span>
+							<a href="javascript: void(0);" class="button next">Next</a>
+							<a href="javascript: void(0);" class="button play">Play</a>
+							<a href="javascript: void(0);" class="button stop">Stop</a>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset id="freeform">
+					<legend>Free-form</legend>
+					<div class="row">
+						<div class="large-12 columns">
+							<p>If you need to practise any other sequences then enter them below. If you want to use prosigns then enclose them with angle-brackets (e.g. &quot;&lt;bk&gt;&quot;) and tick the box in the sound controls.</p>
+						</div>
+					</div>
+					<div class="row">
+        				<input id="fmessage" type="text" placeholder="Type your free-form text here" />
+					</div>
+					<div class="row">
+						<div class="large-12 columns">
+							<a href="javascript: void(0);" class="button play">Play</a>
+							<a href="javascript: void(0);" class="button stop">Stop</a>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+
+		<div class="large-3 columns">
+	      <fieldset>
+	        <legend>Sound Controls</legend>
+	        <label for="volume">Volume <span data-tooltip aria-haspopup="true" class="has-tip" title="Probably best to use your computer's volume control...">(?)</span></label>
+	        <input size="5" type="text" id="volume" value="0.5"/>
+	        <label for="pitch">Pitch / Hz <span data-tooltip aria-haspopup="true" class="has-tip" title="A high number makes a high pitch. 700 is a good value.">(?)</span></label>
+	        <input size="5" type="text" id="pitch" value="600"/>
+	        <label for="wpm">Speed / wpm <span data-tooltip aria-haspopup="true" class="has-tip" title="The speed in words per minute, taking 'PARIS' as the standard word.">(?)</span></label>
+	        <input size="5" type="text" id="wpm" name="wpm" value="20" onBlur="javascript:tieSpeeds()"/>
+	        <label for="fwpm">Farnsworth Speed / wpm <span data-tooltip aria-haspopup="true" class="has-tip" title="The Farnsworth speed slows down the space between letters and words, making it easier to learn Morse. It should be a lower value than the speed.">(?)</span></label>
+	        <input size="5" type="text" id="fwpm" name="fwpm" value="20" onBlur="javascript:tieSpeeds()"/>
+	        <input type="checkbox" checked id="useprosigns" name="useprosigns"/>
+	        <label for="useprosigns">Use prosigns <span data-tooltip aria-haspopup="true" class="has-tip" title="Prosigns are a sort of Morse code shorthand, written e.g. < BT >">(?)</span></label>
+	      </fieldset>
+	      
+	<a href="https://va7fk.tk/" title="va7fk.tk"><img src="/images/crow_callsign_lite.png" width="100%"></a>
+
+<!--			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<fieldset id="paypal">
+					<legend>Donate</legend>
+					<p>If you find this software useful, please make a small donation to the author.</p>
+					<p><em>Thank you!</em></p>
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="hosted_button_id" value="GMWHQ6FUKZTR4">
+					<input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+					<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
+				</fieldset>
+			</form>
+-->
+
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="large-12 columns">
+			<h4>Notes</h4>
+			<p>This translator requires JavaScript to be enabled. It is known to work well in the Firefox and Chrome web browsers (which implement versions of the HTML 5 audio APIs).  It works, with some sound artefacts, in recent versions of Internet Explorer (where it has to use Flash).</p>
+			<p>This software makes use of <a href="https://github.com/grantgalitz/XAudioJS">XAudioJS</a>, <a href="http://foundation.zurb.com/">Foundation</a> and <a href="http://jquery.com/">jQuery</a>.  The software is &copy; Copyright Stephen C Phillips, 2013-2015.
+		</div>
+	</div>
+
+	<script src="js/vendor/jquery.js"></script>	
+	<script src="js/foundation/foundation.js"></script>
+	<script src="js/foundation/foundation.tooltip.js"></script>
+
+	<script>
+	$(document).foundation();
+	</script>
+
+	<script type="text/javascript" src="js/audio/resampler.js"></script>
+	<script type="text/javascript" src="js/audio/swfobject.js"></script>
+	<script type="text/javascript" src="js/audio/XAudioServer.js"></script>
+	<script type="text/javascript" src="js/morse.js"></script>
+	<script type="text/javascript" src="js/sessions2.js"></script>
+	<script type="text/javascript" src="js/trainer.js"></script>
+</body>
+</html>
