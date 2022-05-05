@@ -1,14 +1,15 @@
 /* CSS for va7fk index */
 
 @font-face {
-  /*
+
     font-family: 'Michroma';
     src: url('files/fonts/michroma/Michroma.ttf');
     src: url('files/fonts/michroma/Michroma.ttf') format('truetype'),
-*/
+/*
     font-family: 'Audiowide';
     src: url('files/fonts/Audiowide/Audiowide-Regular.ttf');
     src: url('files/fonts/Audiowide/Audiowide-Regular.ttf') format('truetype'), 
+*/
 }
 
 body {
@@ -17,7 +18,7 @@ body {
 /*    
   font-family: Courier;
 */
-  font-family: 'Audiowide';
+  font-family: 'Michroma';
   font-style: normal;
   font-weight: normal;
   font-size:1.1em;
