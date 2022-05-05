@@ -6,7 +6,6 @@
     src: url('files/fonts/michroma/Michroma.ttf');
     src: url('files/fonts/michroma/Michroma.ttf') format('truetype'),
 */
-    font-family: 'Audiowide';
     src: url('files/fonts/Audiowide/Audiowide-Regular.ttf');
     src: url('files/fonts/Audiowide/Audiowide-Regular.ttf') format('truetype'), 
 }
@@ -14,6 +13,7 @@
 body {
   background-color: #e8e8e8;
   color: black;
+  font-family: 'Audiowide';
 /*    
   font-family: Courier;
 */
