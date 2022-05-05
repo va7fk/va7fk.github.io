@@ -1,6 +1,11 @@
 /* CSS for va7fk index */
 
 @font-face {
+  /*
+    font-family: 'Michroma';
+    src: url('files/fonts/michroma/Michroma.ttf');
+    src: url('files/fonts/michroma/Michroma.ttf') format('truetype'),
+*/
     font-family: 'Audiowide';
     src: url('files/fonts/Audiowide/Audiowide-Regular.ttf');
     src: url('files/fonts/Audiowide/Audiowide-Regular.ttf') format('truetype'), 
@@ -14,7 +19,7 @@ body {
 */
   font-family: 'Audiowide';
   font-style: normal;
-  font-weight:bold;
+  font-weight: normal;
   font-size:1.1em;
   margin:40px auto;
   max-width:850px;
@@ -31,6 +36,7 @@ h1,h2,h3{line-height:1.}
 
 h1 {
   font-size: 2em;
+  font-weight: bold;
 }
 
 .button {
