@@ -76,7 +76,35 @@
 <iframe src="https://widget.dxwatch.com/widget/widget1.php?s=Zmw9MSZwPTEmbD0xJmNhbGxzaWduPSZjYWxsdHlwZT1keCZmPTIwJnc9NjAwJmY9MjAmcj0xNQ==" width="600" height="415" align="middle" frameborder="0" scrolling="no"></iframe>
 <hr style="height: 10px; visibility:hidden;" />
 
+  </body>
+</html>
 
+<!--  unused but maybe useful  -->
+
+<!-- UTC CLOCK 
+	<hr style="height:5px; visibility:hidden;" />
+	<div id="clockbox" style="text-align:left; font:22pt Courier; color:#000000;"></div>
+	<script type="text/javascript">
+		var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+		var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+		var tutc=["UTC"];
+		function GetClock(){
+			var d=new Date();
+			var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+			var nhour=d.getHours(),nmin=d.getMinutes();
+			if(nmin<=9) nmin="0"+nmin
+
+			var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+" "+tutc+"";
+			document.getElementById('clockbox').innerHTML=clocktext;
+		}
+
+		GetClock();
+		setInterval(GetClock,1000);
+	    </script>
+	<hr style="height: 1.5px; visibility:hidden;" />
+	<hr>	    
+-->
+	
 <!-- #### SPOT BUTTON PAD STARTS HERE ####
 	<table width="191" height="222" border="0" align="right" cellpadding="0" cellspacing="0" bordercolor="#000"  bgcolor="#000" style="clear: all; float: left;  border-collapse: collapse; text-align: center;">
         <tr> 
@@ -150,35 +178,6 @@
             <a href="http://www.dxsummit.fi/#/?sat=true"><img border="0" src="/images/dx_summit/sat.gif" width="49" height="21"></a></td>
   </tr>
       </table>
-<hr style="height: 10px; visibility:hidden;" />
-#### SPOT BUTTON PAD ENDS HERE #### -->
+-->
 
-
-  </body>
-</html>
-
-	<!-- UTC CLOCK 
-	<hr style="height:5px; visibility:hidden;" />
-	<div id="clockbox" style="text-align:left; font:22pt Courier; color:#000000;"></div>
-	<script type="text/javascript">
-		var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-		var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
-		var tutc=["UTC"];
-		function GetClock(){
-			var d=new Date();
-			var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
-			var nhour=d.getHours(),nmin=d.getMinutes();
-			if(nmin<=9) nmin="0"+nmin
-
-			var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+" "+tutc+"";
-			document.getElementById('clockbox').innerHTML=clocktext;
-		}
-
-		GetClock();
-		setInterval(GetClock,1000);
-	    </script>
-	<hr style="height: 1.5px; visibility:hidden;" />
-	<hr>	    
-	-->
-	
 <!--  go away  -->
