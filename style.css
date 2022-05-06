@@ -1,9 +1,9 @@
 /* CSS for va7fk index */
 
 @font-face {
-    font-family: 'JuraMedium';
-    src: url('/files/fonts/jura/JuraMedium.ttf');
-    src: url('/files/fonts/jura/JuraMedium.ttf') format('truetype'),
+    font-family: 'TGL_0-1451Eng';
+    src: url('/files/fonts/TGL_0-1451Eng/TGL_0-1451Eng.ttf');
+    src: url('/files/fonts/TGL_0-1451Eng/TGL_0-1451Eng.ttf') format('truetype'),
 /*
     @font-face {
     font-family: 'Michroma';
@@ -25,6 +25,10 @@
     font-family: 'JuraMedium';
     src: url('/files/fonts/jura/JuraMedium.ttf');
     src: url('/files/fonts/jura/JuraMedium.ttf') format('truetype'),
+    
+    font-family: 'TGL_0-1451Eng';
+    src: url('/files/fonts/TGL_0-1451Eng/TGL_0-1451Eng.ttf');
+    src: url('/files/fonts/TGL_0-1451Eng/TGL_0-1451Eng.ttf') format('truetype'),
 */
 }
 
@@ -34,7 +38,7 @@ body {
 /*    
   font-family: Courier;
 */
-  font-family: 'JuraMedium';
+  font-family: 'TGL_0-1451Eng';
   font-style: normal;
   font-weight: normal;
   font-size:1.1em;
