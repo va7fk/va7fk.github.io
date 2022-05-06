@@ -18,9 +18,9 @@
     src: url('/files/fonts/calculative/Calculative.ttf');
     src: url('/files/fonts/calculative/Calculative.ttf') format('truetype'),
     
-    font-family: 'JuraBook';
-    src: url('/files/fonts/jura/JuraBook.ttf');
-    src: url('/files/fonts/jura/JuraBook.ttf') format('truetype'), 
+    font-family: 'JuraMedium';
+    src: url('/files/fonts/jura/JuraMedium.ttf');
+    src: url('/files/fonts/jura/JuraMedium.ttf') format('truetype'), 
 */
 }
 
@@ -30,7 +30,7 @@ body {
 /*    
   font-family: Courier;
 */
-  font-family: 'JuraBook';
+  font-family: 'JuraMedium';
   font-style: normal;
   font-weight: normal;
   font-size:1.1em;
