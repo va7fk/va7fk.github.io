@@ -1,13 +1,26 @@
 /* CSS for va7fk index */
 
 @font-face {
+    font-family: 'Calculative';
+    src: url('/files/fonts/calculative/Calculative.ttf');
+    src: url('/files/fonts/calculative/Calculative.ttf') format('truetype'),
+/*
+    @font-face {
     font-family: 'Michroma';
     src: url('files/fonts/michroma/Michroma.ttf');
     src: url('files/fonts/michroma/Michroma.ttf') format('truetype'),
-/*
+    
     font-family: 'Audiowide';
     src: url('files/fonts/Audiowide/Audiowide-Regular.ttf');
     src: url('files/fonts/Audiowide/Audiowide-Regular.ttf') format('truetype'),
+    
+    font-family: 'Calculative';
+    src: url('/files/fonts/calculative/Calculative.ttf');
+    src: url('/files/fonts/calculative/Calculative.ttf') format('truetype'),
+    
+    font-family: 'JuraBook';
+    src: url('/files/fonts/jura/JuraBook.ttf');
+    src: url('/files/fonts/jura/JuraBook.ttf') format('truetype'), 
 */
 }
 
@@ -17,7 +30,7 @@ body {
 /*    
   font-family: Courier;
 */
-  font-family: 'Michroma';
+  font-family: 'Calculative';
   font-style: normal;
   font-weight: normal;
   font-size:1.1em;
