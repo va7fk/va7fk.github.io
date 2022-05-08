@@ -41,6 +41,18 @@ body {
   padding:0 10px
 }
 
+
+
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
 p {
   font-size: 1.1em;
 }
