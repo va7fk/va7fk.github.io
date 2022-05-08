@@ -69,30 +69,10 @@
 <a href="https://form.jotform.com/201201516309138" class="button" method="get" target="_blank">Contact VA7FK</a>
 -->
 
+<!-- UTC Clock -->
+<h3><div id="clockbox" style="text-align:left;"></div></h3>
 
-
-
-
-
-
-
-
-
-	<h3><div id="clockbox" style="text-align:left;"></div></h3>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Dark mode feature -->
+<!-- Dark mode toggle feature -->
 <h3>Toggle Dark/Light Mode</h3>
   <button onclick="myFunction()">Toggle dark mode</button>
 <script>
@@ -128,57 +108,22 @@ function myFunction() {
          
 }
 
+// UTC Clock
+  var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+  var tutc=["UTC"];
+    function GetClock(){
+  var d=new Date();
+  var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+  var nhour=d.getHours(),nmin=d.getMinutes();
+  if(nmin<=9) nmin="0"+nmin
 
+  var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+" "+tutc+"";
+    document.getElementById('clockbox').innerHTML=clocktext;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-		var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-		var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
-		var tutc=["UTC"];
-		function GetClock(){
-			var d=new Date();
-			var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
-			var nhour=d.getHours(),nmin=d.getMinutes();
-			if(nmin<=9) nmin="0"+nmin
-
-			var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+" "+tutc+"";
-			document.getElementById('clockbox').innerHTML=clocktext;
-		}
-
-		GetClock();
-		setInterval(GetClock,1000);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  GetClock();
+    setInterval(GetClock,1000);
 
 </script>
 
@@ -194,9 +139,8 @@ function myFunction() {
 <a href="https://www.hamqsl.com/shortcut.html" title="Ham Solar Conditions" target="_blank" align="center" ><img src="https://www.hamqsl.com/solar101vhfper.php"></a>
 <hr style="height: 5px; visibility:hidden;" />
 
-
 <div id="myDIV">
-<iframe src="https://widget.dxwatch.com/widget/widget1.php?s=Zmw9MSZwPTEmbD0xJmNhbGxzaWduPSZjYWxsdHlwZT1keCZmPTIwJnc9NjAwJmY9MjAmcj0xNQ==" width="600" height="415" align="middle" frameborder="0" scrolling="no"></iframe>
+  <iframe src="https://widget.dxwatch.com/widget/widget1.php?s=Zmw9MSZwPTEmbD0xJmNhbGxzaWduPSZjYWxsdHlwZT1keCZmPTIwJnc9NjAwJmY9MjAmcj0xNQ==" width="600" height="415" align="middle" frameborder="0" scrolling="no"></iframe>
 </div>
 
 <!-- #### SPOT BUTTON PAD STARTS HERE #### -->
@@ -278,8 +222,6 @@ function myFunction() {
 
   </body>
 </html>
-
-<!--  unused but maybe useful  -->
 
 <!-- UTC CLOCK 
 	<hr style="height:5px; visibility:hidden;" />
