@@ -70,8 +70,10 @@
 -->
 
 <hr style="height: 3px; visibility:hidden;" />
+
+<!-- Dark mode feature -->
 <h3>Toggle Dark/Light Mode</h3>
-<button onclick="myFunction()">Toggle dark mode</button>
+  <button onclick="myFunction()">Toggle dark mode</button>
 <script>
 
 // toggle dark mode button
@@ -86,7 +88,7 @@ function myFunction() {
     x.style.display = "none";
   }
 
-//   dx widget switch when darkmode active
+// toggle dx widget to darkmode version
   var x = document.getElementById("myDIV2");
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -94,37 +96,15 @@ function myFunction() {
     x.style.display = "none";
   }
 
-   
-   
-   
-   
-   
-   
-
-            var Image_Id = document.getElementById('getImage');
-            if (Image_Id.src.match("images/morse1.png")) {
-                Image_Id.src = "images/va7fk_morse_dark.png";
-            }
-            else {
-                Image_Id.src = "images/morse1.png";
-            }
+// toggle cw image to darkmode version
+  var Image_Id = document.getElementById('getImage');
+  if (Image_Id.src.match("images/morse1.png")) {
+    Image_Id.src = "images/va7fk_morse_dark.png";
+  } else {
+    Image_Id.src = "images/morse1.png";
+  }
          
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
 }
-
-
-
-
-
 </script>
 
 <hr style="height: 10px; visibility:hidden;" />
@@ -144,11 +124,8 @@ function myFunction() {
 <iframe src="https://widget.dxwatch.com/widget/widget1.php?s=Zmw9MSZwPTEmbD0xJmNhbGxzaWduPSZjYWxsdHlwZT1keCZmPTIwJnc9NjAwJmY9MjAmcj0xNQ==" width="600" height="415" align="middle" frameborder="0" scrolling="no"></iframe>
 </div>
 
-
-
-
-<div id="myDIV2"  style="display:none">
 <!-- #### SPOT BUTTON PAD STARTS HERE #### -->
+<div id="myDIV2"  style="display:none">
 	<table width="191" height="222" border="0" align="right" cellpadding="0" cellspacing="0" bordercolor="#000"  bgcolor="#000" style="clear: all; float: left;  border-collapse: collapse; text-align: center;">
         <tr> 
           <td align="center" valign="bottom" colspan="3" bgcolor="#000" height="28"><a href="http://www.dxsummit.fi/#/history"><img border="0" src="/images/dx_summit/dxsummit_search.gif" width="167" height="20"></a></td>
@@ -222,13 +199,6 @@ function myFunction() {
   </tr>
       </table>
           </div>
-
-
-
-
-
-
-
 <hr style="height: 10px; visibility:hidden;" />
 
   </body>
