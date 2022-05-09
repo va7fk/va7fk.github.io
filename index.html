@@ -58,17 +58,12 @@
     <option value = "https://prime.tgif.network/tgprofile.php?id=30214" selected>30214: VA7FK Personal Talkgroup</option>
     <option value = "https://prime.tgif.network/tgprofile.php?id=31665">31665: DMR Talkgroup</option>
     <option value = "https://tgif.network/lastheard.php">TGIF Last Heard</option>
-<!--    <option value = "31672" disabled>31672: Pi-Star Chat</option> -->
+    <!--    <option value = "31672" disabled>31672: Pi-Star Chat</option> -->
   </select>
     <input type=button value="Go" onclick="goToNewPage()" style="font-size: 0.7em"/>
   </form>
 
-  <small>* talkgroups are not reliably monitored</small>
-  
-<!--
-<hr style="visibility:hidden;" />  
-<a href="https://form.jotform.com/201201516309138" class="button" method="get" target="_blank">Contact VA7FK</a>
--->
+<small>* talkgroups are not reliably monitored</small>
 
 <!-- UTC Clock -->
 <h3><div id="clockbox" style="text-align:left;"></div></h3>
@@ -77,35 +72,26 @@
 <!-- <h3>Dark Mode</h3> -->
   <button onclick="myFunction()">Toggle dark mode</button>
 
-  
-  
-  
-  
 <!-- Contact button -->
-<h3>Contact</h3>
+<!-- <h3>Contact</h3> -->
   <button onclick="openTab('https://form.jotform.com/201201516309138')">Contact VA7FK</button>
-    <script>
-function openTab(url) {
-			const link = document.createElement('a');
-			link.href = url;
-			link.target = '_blank';
-			document.body.appendChild(link);
-			link.click();
-			link.remove();
-		}
-    </script>
+  <script>
+// Open new contact forum tab
+    function openTab(url) {
+      const link = document.createElement('a');
+        link.href = url;
+        link.target = '_blank';
+      document.body.appendChild(link);
+        link.click();
+        link.remove();
+      }
+  </script>
   
-  
-  
-  
-  
-  
-<script>
-
+  <script>
 // toggle dark mode css function
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
 
 // hide lightmode dx widget when darkmode active
   var x = document.getElementById("myDIV");
@@ -149,28 +135,27 @@ function myFunction() {
 
   GetClock();
     setInterval(GetClock,1000);
-    
 </script>
 
-<hr style="height: 10px; visibility:hidden;" />
-<div>
-<a href="/morse-trainer/index.html" ><img src="/images/morse1.png" id="getImage" alt="morse" width="72%"></a>
-</div>
+    <hr style="height: 10px; visibility:hidden;" />
+  <div>
+  <a href="/morse-trainer/index.html" ><img src="/images/morse1.png" id="getImage" alt="morse" width="72%"></a>
+  </div>
 <!--
 <hr style="height: 10px; visibility:hidden;" />
 <a href=" " title="VA7FK's Radio Web Directory"><img src="/images/links_banner.png" width="72%" align="center" ></a> 
 -->
-<hr style="height: 10px; visibility:hidden;" />
-<a href="https://www.hamqsl.com/shortcut.html" title="Ham Solar Conditions" target="_blank" align="center" ><img src="https://www.hamqsl.com/solar101vhfper.php"></a>
-<hr style="height: 5px; visibility:hidden;" />
+    <hr style="height: 10px; visibility:hidden;" />
+  <a href="https://www.hamqsl.com/shortcut.html" title="Ham Solar Conditions" target="_blank" align="center" ><img src="https://www.hamqsl.com/solar101vhfper.php"></a>
+    <hr style="height: 5px; visibility:hidden;" />
 
-<div id="myDIV">
-  <iframe src="https://widget.dxwatch.com/widget/widget1.php?s=Zmw9MSZwPTEmbD0xJmNhbGxzaWduPSZjYWxsdHlwZT1keCZmPTIwJnc9NjAwJmY9MjAmcj0xNQ==" width="600" height="415" align="middle" frameborder="0" scrolling="no"></iframe>
-</div>
+  <div id="myDIV">
+    <iframe src="https://widget.dxwatch.com/widget/widget1.php?s=Zmw9MSZwPTEmbD0xJmNhbGxzaWduPSZjYWxsdHlwZT1keCZmPTIwJnc9NjAwJmY9MjAmcj0xNQ==" width="600" height="415" align="middle" frameborder="0" scrolling="no"></iframe>
+  </div>
 
 <!-- #### SPOT BUTTON PAD STARTS HERE #### -->
-<div id="myDIV2"  style="display:none">
-	<table width="191" height="222" border="0" align="right" cellpadding="0" cellspacing="0" bordercolor="#000"  bgcolor="#000" style="clear: all; float: left;  border-collapse: collapse; text-align: center;">
+  <div id="myDIV2"  style="display:none">
+      <table width="191" height="222" border="0" align="right" cellpadding="0" cellspacing="0" bordercolor="#000"  bgcolor="#000" style="clear: all; float: left;  border-collapse: collapse; text-align: center;">
         <tr> 
           <td align="center" valign="bottom" colspan="3" bgcolor="#000" height="28"><a href="http://www.dxsummit.fi/#/history"><img border="0" src="/images/dx_summit/dxsummit_search.gif" width="167" height="20"></a></td>
         </tr>
@@ -240,17 +225,24 @@ function myFunction() {
             <a href="http://www.dxsummit.fi/#/?beacon=true"><img border="0" src="/images/dx_summit/beacons.gif" width="49" height="21"></a></td>
           <td width="62" height="23" align="left">
             <a href="http://www.dxsummit.fi/#/?sat=true"><img border="0" src="/images/dx_summit/sat.gif" width="49" height="21"></a></td>
-  </tr>
-      </table>
-          </div>
-<hr style="height: 10px; visibility:hidden;" />
-
+      </tr>
+    </table>
+  </div>
+      
+      <hr style="height: 10px; visibility:hidden;" />
   </body>
 </html>
 
+<!-- Unused but maybe useful HTML -->
+
+<!-- HTML Contact button
+    <hr style="visibility:hidden;" />  
+  <a href="https://form.jotform.com/201201516309138" class="button" method="get" target="_blank">Contact VA7FK</a>
+-->
+
 <!-- UTC CLOCK 
-	<hr style="height:5px; visibility:hidden;" />
-	<div id="clockbox" style="text-align:left; font:22pt Courier; color:#000000;"></div>
+    <hr style="height:5px; visibility:hidden;" />
+  <div id="clockbox" style="text-align:left; font:22pt Courier; color:#000000;"></div>
 	<script type="text/javascript">
 		var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 		var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
@@ -268,7 +260,7 @@ function myFunction() {
 		GetClock();
 		setInterval(GetClock,1000);
 	    </script>
-	<hr style="height: 1.5px; visibility:hidden;" />
+    <hr style="height: 1.5px; visibility:hidden;" />
 	<hr>	    
 -->
 
