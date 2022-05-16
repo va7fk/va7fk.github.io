@@ -70,7 +70,7 @@
 
 <!-- Dark mode toggle button -->
 <!-- <h3>Dark Mode</h3> -->
-    <button onclick="myFunction()">Toggle dark mode</button>
+    <button  id="autoClickBtn" onclick="myFunction()">Toggle dark mode</button>
 
 <!-- Contact button -->
 <!-- <h3>Contact</h3> -->
@@ -231,14 +231,17 @@
       
       <hr style="height: 10px; visibility:hidden;" />
   </body>
+  
+<script>
+  window.onload = function(){
+  document.getElementById('autoClickBtn').click();
+}
+</script>
+  
+  
 </html>
 
 <!-- Unused but maybe useful HTML -->
-
-<!-- HTML Contact button
-    <hr style="visibility:hidden;" />  
-  <a href="https://" method="get" target="_blank">Contact VA7FK</a>
--->
 
 <!-- UTC CLOCK 
     <hr style="height:5px; visibility:hidden;" />
