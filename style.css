@@ -25,8 +25,8 @@
 }
 
 body {
-  background-color: #1c1c21;
-  color: #a6a6a6;
+  background-color: #e8e8e8;
+  color: black;
 /*    
   font-family: Courier;
 */
@@ -42,8 +42,8 @@ body {
 }
 
 .dark-mode {
-  background-color: #e8e8e8;
-  color: black;
+  background-color: #1c1c21;
+  color: #a6a6a6;
 }
 
 p {
