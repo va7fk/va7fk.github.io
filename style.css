@@ -31,8 +31,8 @@ body {
   font-family: Courier;
 */
   font-family: 'JuraBook';
-  font-style: normal;
-  font-weight: bold;
+  font-style: bold;
+  font-weight: normal;
   font-size:1.1em;
   margin:40px auto;
   max-width:850px;
