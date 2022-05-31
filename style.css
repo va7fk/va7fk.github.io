@@ -57,6 +57,26 @@ h1 {
   font-weight: bold;
 }
 
+ /* unvisited link */
+a:link {
+  color: #a6a6a6;
+}
+
+/* visited link */
+a:visited {
+  color: #a6a6a6;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+} 
+
 .button {
         background-color: white;
         border: dashed;
