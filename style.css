@@ -59,17 +59,17 @@ h1 {
 
  /* unvisited link */
 a:link {
-  color: MediumPurple;
+  color: RoyalBlue;
 }
 
 /* visited link */
 a:visited {
-  color: MediumPurple;
+  color: RoyalBlue;
 }
 
 /* mouse over link */
 a:hover {
-  color: RoyalBlue;
+  color: MediumPurple;
 }
 
 /* selected link */
