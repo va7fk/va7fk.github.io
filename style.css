@@ -57,10 +57,6 @@ h1 {
   font-weight: bold;
 }
 
-a {
-  line-height:1;
-}
-
  /* unvisited link */
 a:link {
   color: MediumPurple;
