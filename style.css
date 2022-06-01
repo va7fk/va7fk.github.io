@@ -60,21 +60,25 @@ h1 {
  /* unvisited link */
 a:link {
   color: MediumPurple;
+  text-decoration: none;
 }
 
 /* visited link */
 a:visited {
   color: MediumPurple;
+  text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
   color: RoyalBlue;
+  text-decoration: none;
 }
 
 /* selected link */
 a:active {
   color: MediumOrchid;
+  text-decoration: none;
 } 
 
 .button {
