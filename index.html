@@ -73,23 +73,8 @@
     <button  id="autoClickBtn" onclick="myFunction()">Toggle dark mode</button>
     
 <!-- DX Widget button -->
-    <button id="LogicLink" onclick="Table1();">Dx Web Cluster Widget</button>
-    
-    
-<!-- Contact button -->
-<!--     <button onclick="openTab('https://form.jotform.com/201201516309138')">Contact VA7FK</button> -->
-  <script>
-// Open new contact forum tab
-    function openTab(url) {
-      const link = document.createElement('a');
-        link.href = url;
-        link.target = '_blank';
-      document.body.appendChild(link);
-        link.click();
-        link.remove();
-      }
-  </script>
-    <hr style="height: 5px; visibility:hidden;" />
+    <button id="LogicLink" onclick="Table1();">Dx Cluster Widget</button>
+      <hr style="height: 5px; visibility:hidden;" />
 
 <h3>Links</h3>
   <ul>
@@ -98,9 +83,6 @@
     <li><a href="https://va7fk.tk/links.html">VA7FK's Radio Web Directory</a></li>
 
     <li><a href="https://form.jotform.com/201201516309138">Contact VA7FK</a></li>
-    
-<!--     <li><a id="LogicLink" onclick="Table1();" href="#">Dx Web Cluster Widget</a></li> -->
-  </ul>    
     
   <script>
 // DX iFrame Hyperlink Control Script
@@ -270,6 +252,38 @@
       </tr>
     </table>
   </div>
+-->
+
+<!-- ## DX iFrame Hyperlink Control ##
+<li><a id="LogicLink" onclick="Table1();" href="#">Dx Web Cluster Widget</a></li>     
+  <script>
+// DX iFrame Hyperlink Control Script
+    function Table1() {
+    var elem=document.getElementById("TableNested1");
+    var hide = elem.style.display =="none";
+    if (hide) {
+      elem.style.display="table";
+    } 
+    else {
+      elem.style.display="none";
+    }
+  }
+  </script>
+-->
+
+<!-- ## Contact button ##
+<button onclick="openTab('https://form.jotform.com/201201516309138')">Contact VA7FK</button>
+  <script>
+// Open new contact forum tab
+    function openTab(url) {
+      const link = document.createElement('a');
+        link.href = url;
+        link.target = '_blank';
+      document.body.appendChild(link);
+        link.click();
+        link.remove();
+      }
+  </script>
 -->
 
 <!-- UTC CLOCK 
