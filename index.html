@@ -70,10 +70,10 @@
     <hr style="height: 2px; visibility:hidden;" />
     
 <!-- Dark mode toggle button -->
-    <button  id="autoClickBtn" onclick="myFunction()">Toggle dark mode</button>
+    <button  id="autoClickBtn" onclick="myFunction()">Toggle Dark Mode</button>
     
 <!-- DX Widget button -->
-    <button id="LogicLink" onclick="Table1();">Dx Cluster Widget</button>
+    <button id="LogicLink" onclick="Table1();">DX Cluster Widget</button>
       <hr style="height: 5px; visibility:hidden;" />
 
 <h3>Links</h3>
@@ -112,6 +112,18 @@
     x.style.display = "none";
   }
 
+  
+  
+  // hide lightmode dx widget when darkmode active
+  var x = document.getElementById("LogicLink");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  
+  
+  
 // show darkmode dx widget when darkmode active
   var x = document.getElementById("myDIV2");
   if (x.style.display === "none") {
