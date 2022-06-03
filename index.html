@@ -68,14 +68,14 @@
 <!-- UTC Clock -->
 <h3><div id="clockbox" style="text-align:left;"></div></h3>
     <hr style="height: 2px; visibility:hidden;" />
-<p>    
-<!-- Dark mode toggle button -->
+    
+<!-- Dark/Light mode toggle button -->
     <button  id="autoClickBtn" onclick="myFunction()">Toggle Dark Mode</button>
     
 <!-- DX Widget button -->
     <button id="LogicLink" onclick="Table1();">DX Cluster Widget</button>
       <hr style="height: 5px; visibility:hidden;" />
-</p>
+
 <h3>Links</h3>
   <ul>
     <li><a href="https://va7fk.tk/links.html">VA7FK's Radio Web Directory</a></li>
@@ -104,7 +104,7 @@
     var element = document.body;
     element.classList.toggle("dark-mode");
 
-// hide lightmode dx widget when darkmode active
+// hide lightmode dx widget when lightmode active
   var x = document.getElementById("myDIV");
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -112,9 +112,7 @@
     x.style.display = "none";
   }
 
-  
-  
-  // hide lightmode dx widget when darkmode active
+// hide DX Widget button when lightmode active
   var x = document.getElementById("LogicLink");
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -122,9 +120,7 @@
     x.style.display = "none";
   }
   
-  
-  
-// show darkmode dx widget when darkmode active
+// show darkmode dx widget when lightmode active
   var x = document.getElementById("myDIV2");
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -132,7 +128,7 @@
     x.style.display = "none";
   }
 
-// toggle cw image to darkmode version
+// toggle cw image to lightmode version
   var Image_Id = document.getElementById('getImage');
   if (Image_Id.src.match("images/va7fk_morse_dark.png")) {
     Image_Id.src = "images/morse1.png";
