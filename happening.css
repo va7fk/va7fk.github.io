@@ -1,0 +1,92 @@
+/* CSS for va7fk index */
+
+@font-face {
+    font-family: 'JuraMedium';
+    src: url('/files/fonts/jura/JuraMedium.ttf');
+    src: url('/files/fonts/jura/JuraMedium.ttf') format('truetype'),
+
+}
+
+body {
+  background-color: #1c1c21;
+  color: #a6a6a6; 
+  font-family: Courier;
+  font-style: normal;
+  font-weight: normal;
+  font-size:1.1em;
+  margin:40px auto;
+  max-width:850px;
+  line-height:1.6;
+  padding:0 10px
+}
+
+.dark-mode {
+  background-color: #e8e8e8;
+  color: black;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: MediumPurple; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+h1,h2,h3{line-height:1.}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+a {
+  font-size:1.1em;
+  font-weight: bold;
+}
+
+ /* unvisited link */
+a:link {
+  color: MediumPurple;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: MediumPurple;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: RoyalBlue;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: MediumOrchid;
+  text-decoration: none;
+} 
+
+.button {
+        background-color: white;
+        border: dashed;
+        color: black;
+        padding: 10px 19px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 26px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
