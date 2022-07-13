@@ -39,13 +39,13 @@ a {
 }
 
 a:link {
-  color: MediumPurple;
+  color: #a6a6a6;
   text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: MediumPurple;
+  color: #a6a6a6;
   text-decoration: none;
 }
 
