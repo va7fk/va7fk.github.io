@@ -71,13 +71,13 @@ header {
 }
 
 header a:link, a:visited {
-  color: #000000;
+  color: #a6a6a6;
   text-decoration: none;
 }
 
 header a:hover, a:active {
   background-color: #525b66;
-  color: #000000;
+  color: #a6a6a6;
   text-decoration: none;
 }
 
