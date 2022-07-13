@@ -62,7 +62,7 @@ a:active {
 } 
 
 header {
-  background-color: #525b66;
+  background-color: #5e6987;
   padding: 20px;
   text-align: center;
   color: #fefefe;
@@ -114,7 +114,7 @@ footer {
 }
 
 .topnav a:hover, a:active {
-  background-color: #80d4ff;
+  background-color: #667292;
   color: #050709;
   text-decoration: none;
 }
@@ -128,10 +128,10 @@ h3, h4 {
 
 h3 {
   font-size: 1.4em;
-  background-color: #667292;
+  background-color: #3f465a;
   padding: 10px;
   border: 1px solid #000000;
-  color: #b8c0c7;
+  color: #a6a6a6;
   font-family: "Audiowide", sans-serif;;
 }
 
