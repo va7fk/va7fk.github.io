@@ -131,13 +131,14 @@ h3 {
   background-color: #3f465a;
   padding: 10px;
   border: 1px solid #000000;
-  color: #a6a6a6;
+  color: #b8c0c7;
   font-family: "Audiowide", sans-serif;;
 }
 
 h4 {
   font-size: 1.3em;
   padding-left: 10px;
+  color: #b8c0c7;
 }
 
 ul {
