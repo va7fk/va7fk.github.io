@@ -43,16 +43,15 @@ a:link {
   text-decoration: none;
 }
 
-/* visited link
+/* visited link */
 a:visited {
   color: #a6a6a6;
   text-decoration: none;
 }
-*/
 
 /* mouse over link */
 a:hover {
-  color: RoyalBlue;
+  color: #93a9ec;
   text-decoration: none;
 }
 
