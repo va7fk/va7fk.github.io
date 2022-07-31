@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- va7fk website index -->
+<!-- va7fk.tk index -->
 
 <html>
   <head>
@@ -23,20 +23,25 @@
 
   </head>
     <body>
-
+      <a href="https://morsecode.world/international/trainer/words.html"><img src="/images/transparent.png" allign=left>
+    <hr style="height: 10px; visibility:hidden;" />
 <h1>Amateur Radio Station VA7FK</h1>
-    <a href="/morse-trainer/index.html" title="VA7FK Amateur Radio" target="_blank"><img src="/images/morse1.png" alt="morse" width="100%"></a>
-    <p><b>VA7FK is a 100 Watt amateur radio station located in British Columbia, Canada. The station is also licensed under the callsign VE7JUR.</b><p>
-	    
-<h3>DMR Identification:</h3>
+    <hr width="61%" align="left">
+    <hr style="height: 5px; visibility:hidden;" />
+<p><b>VA7FK is a 250 Watt amateur radio station located in British Columbia, Canada. The station is also licensed under the callsign VE7JUR.</b><p>
+<p><b>DMR ID: 3021414 / DAPNET ID: VA7FK</b><p>
+
+<!--
+<h3>DMR Identification</h3>
     <ul><b>
     <li>DMR ID: 3021414</li>
     <li>DAPNET ID: VA7FK</li>
     </b></ul>
+  <hr style="height: 2px; visibility:hidden;" />
 
-<h3>Monitored DMR Talkgroups:</h3>
+<h3>Monitored DMR Talkgroups</h3>
   <form>
-  <select name="bm" id="bm" accesskey="target">
+  <select name="bm" id="bm" accesskey="target" style="font-size: 0.7em">
     <optgroup label = "BrandMeister">
     <option value = "https://brandmeister.network/?page=lh&DestinationID=302">302: Canada Wide</option>
     <option value = "https://brandmeister.network/?page=lh&DestinationID=3023">3023: Ontario Cross-Link</option>
@@ -56,32 +61,246 @@
     <option value = "https://prime.tgif.network/tgprofile.php?id=30214" selected>30214: VA7FK Personal Talkgroup</option>
     <option value = "https://prime.tgif.network/tgprofile.php?id=31665">31665: DMR Talkgroup</option>
     <option value = "https://tgif.network/lastheard.php">TGIF Last Heard</option>
-<!--    <option value = "31672" disabled>31672: Pi-Star Chat</option> -->
+
   </select>
-    <input type=button value="Go" onclick="goToNewPage()" />
+    <input type=button value="Go" onclick="goToNewPage()" style="font-size: 0.7em"/>
   </form>
 
-  <small>* talkgroups are not reliably monitored</small>
+<small>* talkgroups are not reliably monitored</small>
+-->
 
-<hr style="visibility:hidden;" />  
-<a href="https://form.jotform.com/201201516309138" class="button" method="get" target="_blank">Contact VA7FK</a>    
-<hr style="height: 1px; visibility:hidden;" />
-<hr>    
-<hr style="height: 5px; visibility:hidden;" />
-<a href="links.html" title="VA7FK's Radio Web Directory"><img src="/images/free_candy_van_directory.png" width="30%"></a> <!-- /images/hamrad1.png -->
-<hr style="height: 10px; visibility:hidden;" />
-<a href="https://www.hamqsl.com/shortcut.html" title="Ham Solar Conditions" target="_blank"><img src="https://www.hamqsl.com/solar101vhfper.php"></a>
-<hr style="height: 5px; visibility:hidden;" />
-<iframe src="https://widget.dxwatch.com/widget/widget1.php?s=Zmw9MSZwPTEmbD0xJmNhbGxzaWduPSZjYWxsdHlwZT1keCZmPTIwJnc9NjAwJmY9MjAmcj0xNQ==" width="600" height="415" align="middle" frameborder="0" scrolling="no"></iframe>
+<!-- UTC Clock -->
+<h3><div id="clockbox" style="text-align:left;"></div></h3>
+    <hr style="height: 2px; visibility:hidden;" />
+    
+<!-- Dark/Light mode toggle button -->
+    <button  id="autoClickBtn" onclick="myFunction()">Toggle Dark Mode</button>
+      <hr style="height: 1px; visibility:hidden;" />
+<!-- DX Widget button -->
+    <button id="LogicLink" onclick="Table1();">DX Cluster Widget</button>
+      <hr style="height: 5px; visibility:hidden;" />
 
+<h3>Links</h3>
+  <ul>
+    <li><a href="https://va7fk.tk/links.html">Radio Web Directory</a></li>
+<!--  <li><a href="https://www.pskreporter.info/pskmap?">PSKreporter</a></li> -->
+    <li><a href="https://www.bandplans.com/">Band Plans</a></li>
+    <li><a href="https://form.jotform.com/201201516309138">Contact</a></li>
+  </ul>   
+  
+  <script>
+// DX iFrame Hyperlink Control Script
+    function Table1() {
+    var elem=document.getElementById("TableNested1");
+    var hide = elem.style.display =="none";
+    if (hide) {
+      elem.style.display="table";
+    } 
+    else {
+      elem.style.display="none";
+    }
+  }
+  </script>
+
+  <script>
+// toggle dark mode css function
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+
+// hide lightmode dx widget when lightmode active
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+// hide DX Widget button when lightmode active
+  var x = document.getElementById("LogicLink");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  
+// show darkmode dx widget when lightmode active
+  var x = document.getElementById("myDIV2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+// toggle cw image to lightmode version
+  var Image_Id = document.getElementById('getImage');
+  if (Image_Id.src.match("images/va7fk_morse_dark.png")) {
+    Image_Id.src = "images/morse1.png";
+  } else {
+    Image_Id.src = "images/va7fk_morse_dark.png";
+  }
+         
+  }
+
+// UTC Clock
+  var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+  var tutc=["UTC"];
+    function GetClock(){
+  var d=new Date();
+  var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+  var nhour=d.getHours(),nmin=d.getMinutes();
+  if(nmin<=9) nmin="0"+nmin
+
+  var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+" "+tutc+"";
+    document.getElementById('clockbox').innerHTML=clocktext;
+  }
+
+  GetClock();
+    setInterval(GetClock,1000);
+</script>
+
+<hr style="height: 4px; visibility:hidden;" />
+  <a href="https://www.hamqsl.com/shortcut.html" title="Ham Solar Conditions" target="_blank" align="center" ><img src="https://www.hamqsl.com/solar101vhfper.php"></a>
+    <hr style="height: 5px; visibility:hidden;" />
+
+<!-- #### DX CLUSTER HYPERLINK ACTIVATED WIDGET #### -->    
+<div id="myDIV">
+  <iframe id="TableNested1" style="display:none" marginWidth=0 marginHeight=0 src=https://www.dxfuncluster.com/widgets/cluster25.php 
+    frameBorder=0 scrolling=no width=612 height=560></iframe>
+ </div>
+ 
+<!-- #### DX CLUSTER WIDGET LIGHT THEME #### -->
+  <div id="myDIV2"  style="display:none">
+    <iframe marginWidth=0 marginHeight=0 src=https://www.dxfuncluster.com/widgets/cluster25.php 
+    frameBorder=0 scrolling=no width=612 height=560></iframe>
+  </div>
+      
+      <hr style="height: 10px; visibility:hidden;" />
   </body>
 </html>
 
-<!--  go away  -->
+<!--  old code  -->
 
-	<!-- UTC CLOCK 
-	<hr style="height:5px; visibility:hidden;" />
-	<div id="clockbox" style="text-align:left; font:22pt Courier; color:#000000;"></div>
+<!--
+ #### DX WATCH WIDGET ####
+  <div id="myDIV">
+    <iframe src="https://widget.dxwatch.com/widget/widget1.php?s=Zmw9MSZwPTEmbD0xJmNhbGxzaWduPSZjYWxsdHlwZT1keCZmPTIwJnc9NjAwJmY9MjAmcj0xNQ==" width="600" height="415" align="middle" frameborder="0" scrolling="no"></iframe>
+  </div>
+-->
+  
+<!--  <div id="myDIV">
+ #### DX SPOT BUTTON PAD ####    
+        <table width="191" height="222" border="0" align="right" cellpadding="0" cellspacing="0" bordercolor="#000"  bgcolor="#000" style="clear: all; float: left;  border-collapse: collapse; text-align: center;">
+        <tr> 
+          <td align="center" valign="bottom" colspan="3" bgcolor="#000" height="28"><a href="http://www.dxsummit.fi/#/history"><img border="0" src="/images/dx_summit/dxsummit_search.gif" width="167" height="20"></a></td>
+        </tr>
+        <tr> 
+          <td height="20" colspan="3" align="center" bgcolor="#000">
+            <a href="http://www.dxsummit.fi/#/"><img border="0" src="/images/dx_summit/dxsummit_spots.gif" width="167" height="20"></a></td>
+        </tr>
+        <tr bgcolor="#000000" > 
+          <td width="63" height="23" align="right">
+            <a href="http://www.dxsummit.fi/#/?include=1.8MHz"> 
+            <img border="0" src="/images/dx_summit/160.gif" width="49" height="21"></a></td>
+          <td width="66" height="23" align="center"> 
+            <a href="http://www.dxsummit.fi/#/?include=3.5MHz"> 
+            <img border="0" src="/images/dx_summit/80.gif" width="49" height="21"></a></td>
+          <td width="62" height="23" align="left">
+            <a href="http://www.dxsummit.fi/#/?include=5MHz"> 
+            <img border="0" src="/images/dx_summit/60.gif" width="49" height="21"></a></td>
+        </tr>
+        <tr bgcolor="#000000"> 
+          <td width="63" height="23" align="right">
+            <a href="http://www.dxsummit.fi/#/?include=7MHz"> 
+            <img border="0" src="/images/dx_summit/40.gif" width="49" height="21"></a></td>
+          <td width="66" height="23" align="center">
+            <a href="http://www.dxsummit.fi/#/?include=10MHz"> 
+            <img border="0" src="/images/dx_summit/30.gif" width="49" height="21"></a></td>
+          <td width="62" height="23" align="left"> 
+            <a href="http://www.dxsummit.fi/#/?include=14MHz"> 
+            <img border="0" src="/images/dx_summit/20.gif" width="49" height="21"></a></td>
+        </tr>
+        <tr bgcolor="#000000"> 
+          <td width="63" height="23" align="right"> 
+            <a href="http://www.dxsummit.fi/#/?include=18MHz"> 
+            <img border="0" src="/images/dx_summit/17.gif" width="49" height="21"></a></td>
+          <td width="66" height="23" align="center" b> 
+            <a href="http://www.dxsummit.fi/#/?include=21MHz"> 
+            <img border="0" src="/images/dx_summit/15.gif" width="49" height="21"></a></td>
+          <td width="62" height="23" align="left"> 
+            <a href="http://www.dxsummit.fi/#/?include=24MHz"> 
+            <img border="0" src="/images/dx_summit/12.gif" width="49" height="21"></a></td>
+        </tr>
+        <tr bgcolor="#000"> 
+          <td width="63" height="23" align="right"> 
+            <a href="http://www.dxsummit.fi/#/?include=28MHz"> 
+            <img border="0" src="/images/dx_summit/10.gif" width="49" height="21"></a></font></td>
+          <td width="66" height="23" align="center"> 
+            <a href="http://www.dxsummit.fi/#/?include=50MHz"> 
+            <img border="0" src="/images/dx_summit/6.gif" width="49" height="21"></a></td>
+          <td width="62" height="23" align="left"> 
+            <a href="http://www.dxsummit.fi/#/?include=144MHz"> 
+            <img border="0" src="/images/dx_summit/2.gif" width="49" height="21"></a></td>
+        </tr>
+		<tr bgcolor="#000"> 
+          <td width="63" height="23" align="right"> 
+            <a href="http://www.dxsummit.fi/#/?include_modes=DIGI"> 
+            <img border="0" src="/images/dx_summit/digibut.gif" width="49" height="21"></a></td>
+          <td width="66" height="23" align="center"> 
+            <a href="http://www.dxsummit.fi/#/?include_modes=CW"> 
+            <img border="0" src="/images/dx_summit/cwbut.gif" width="49" height="21"></a></td>
+          <td width="62" height="23" align="left"> 
+            <a href="http://www.dxsummit.fi/#/?include_modes=PHONE"> 
+            <img border="0" src="/images/dx_summit/ssbbut.gif" width="49" height="21"></a></td>
+        </tr>
+        <tr bgcolor="#000"> 
+          <td width="63" height="23" align="right">
+            <a href="http://www.dxsummit.fi/#/?iota=true"><img border="0" src="/images/dx_summit/iota.gif" width="49" height="21"></a></td>
+          <td width="66" height="23" align="center">
+            <a href="http://www.dxsummit.fi/#/?beacon=true"><img border="0" src="/images/dx_summit/beacons.gif" width="49" height="21"></a></td>
+          <td width="62" height="23" align="left">
+            <a href="http://www.dxsummit.fi/#/?sat=true"><img border="0" src="/images/dx_summit/sat.gif" width="49" height="21"></a></td>
+      </tr>
+    </table>
+  </div>
+-->
+
+<!-- ## DX iFrame Hyperlink Control ##
+<li><a id="LogicLink" onclick="Table1();" href="#">Dx Web Cluster Widget</a></li>     
+  <script>
+// DX iFrame Hyperlink Control Script
+    function Table1() {
+    var elem=document.getElementById("TableNested1");
+    var hide = elem.style.display =="none";
+    if (hide) {
+      elem.style.display="table";
+    } 
+    else {
+      elem.style.display="none";
+    }
+  }
+  </script>
+-->
+
+<!-- ## Contact button ##
+<button onclick="openTab('https://form.jotform.com/201201516309138')">Contact VA7FK</button>
+  <script>
+// Open new contact forum tab
+    function openTab(url) {
+      const link = document.createElement('a');
+        link.href = url;
+        link.target = '_blank';
+      document.body.appendChild(link);
+        link.click();
+        link.remove();
+      }
+  </script>
+-->
+
+<!-- UTC CLOCK 
+    <hr style="height:5px; visibility:hidden;" />
+  <div id="clockbox" style="text-align:left; font:22pt Courier; color:#000000;"></div>
 	<script type="text/javascript">
 		var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 		var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
@@ -99,6 +318,8 @@
 		GetClock();
 		setInterval(GetClock,1000);
 	    </script>
-	<hr style="height: 1.5px; visibility:hidden;" />
+    <hr style="height: 1.5px; visibility:hidden;" />
 	<hr>	    
-	-->
+-->
+
+<!--  go away  -->
