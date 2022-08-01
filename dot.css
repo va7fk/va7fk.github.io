@@ -68,17 +68,6 @@ body *{
     align-items: center;
 }
 
-#glowinthedark {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    display: block;
-    opacity: .17;
-    z-index: 333;
-    transform: scale(4);
-    pointer-events: none;
-}
-
 .flare {
     position: absolute;
     transform: scale(0.425) rotate(66deg);
