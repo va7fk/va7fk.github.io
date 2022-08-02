@@ -41,10 +41,6 @@ body {
   padding:0 10px
 }
 
-  hr{
-    margin: 50px;    
-  }
-
 .dark-mode {
   background-color: #e8e8e8;
   color: black;
