@@ -87,15 +87,15 @@ a:visited {
   text-decoration: none;
 }
 
-/* mouse over link RoyalBlue */
+/* mouse over link RoyalBlue or Yellow #e6b800*/
 a:hover {
-  color: #e6b800;
+  color: #e67300;
   text-decoration: none;
 }
 
-/* selected link MediumOrchid */
+/* selected link MediumOrchid or Yellow #e6b800*/
 a:active {
-  color: #e6b800;
+  color: #e67300;
   text-decoration: none;
 } 
 
