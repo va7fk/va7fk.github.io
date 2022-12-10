@@ -77,13 +77,13 @@ a {
 
  /* unvisited link MediumPurple or Orange #e67300 */
 a:link {
-  color: #e60000;
+  color: #ff0000;
   text-decoration: none;
 }
 
 /* visited link  MediumPurple or Orange #e67300 */
 a:visited {
-  color: #e60000;
+  color: #ff0000;
   text-decoration: none;
 }
 
