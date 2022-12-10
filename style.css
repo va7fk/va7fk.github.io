@@ -75,15 +75,15 @@ a {
   font-weight: bold;
 }
 
- /* unvisited link MediumPurple */
+ /* unvisited link MediumPurple or Orange #e67300 */
 a:link {
-  color: #e67300;
+  color: #cc0000;
   text-decoration: none;
 }
 
-/* visited link  MediumPurple */
+/* visited link  MediumPurple or Orange #e67300 */
 a:visited {
-  color: #e67300;
+  color: #cc0000;
   text-decoration: none;
 }
 
