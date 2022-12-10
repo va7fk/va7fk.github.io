@@ -4,24 +4,6 @@
     font-family: 'JuraMedium';
     src: url('/files/fonts/jura/JuraMedium.ttf');
     src: url('/files/fonts/jura/JuraMedium.ttf') format('truetype'),
-/*
-    @font-face {
-    font-family: 'Michroma';
-    src: url('files/fonts/michroma/Michroma.ttf');
-    src: url('files/fonts/michroma/Michroma.ttf') format('truetype'),
-    
-    font-family: 'Calculative';
-    src: url('/files/fonts/calculative/Calculative.ttf');
-    src: url('/files/fonts/calculative/Calculative.ttf') format('truetype'),
-    
-    font-family: 'JuraBook';
-    src: url('/files/fonts/jura/JuraBook.ttf');
-    src: url('/files/fonts/jura/JuraBook.ttf') format('truetype'),
-    
-    font-family: 'JuraMedium';
-    src: url('/files/fonts/jura/JuraMedium.ttf');
-    src: url('/files/fonts/jura/JuraMedium.ttf') format('truetype'), 
-*/
 
 }
 
