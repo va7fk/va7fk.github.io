@@ -21,13 +21,11 @@
 <!-- UTC Clock -->
 <h3 class="date"><div id="clockbox" style="text-align:left;"></div></h3>
 <hr style="height: 10px; visibility:hidden;" />
-
-<!-- DX Widget button -->
-    <button onclick="Table1();" ><img src="images/73_shack.jpg" class="center" style="width:50%" alt="73 Shack" border="0"/></button>
-      <hr style="height: 5px; visibility:hidden;" />
-
-
-<!-- <img src="images/73_shack.jpg" class="center" style="width:50%"> -->
+<img src="images/73_shack.jpg" class="center" style="width:50%">
+<!-- #### Solar Conditions #### -->
+<hr style="height: 5px; visibility:hidden;" />
+<a href="https://www.hamqsl.com/shortcut.html" title="Ham Solar Conditions" target="_blank" align="center" ><img src="https://www.hamqsl.com/solar101vhfper.php"></a>
+<hr style="height: 5px; visibility:hidden;" />
 <p class="date"><b>No kids, no lids, no space cadets, no K-phonies, no school bus riders; Class A only. - W2OY (SK)</b></p>    
 <script>
 // UTC Clock
@@ -47,24 +45,6 @@
   GetClock();
     setInterval(GetClock,1000);
 </script>
-<script>
-// DX iFrame Hyperlink Control Script
-    function Table1() {
-    var elem=document.getElementById("TableNested1");
-    var hide = elem.style.display =="none";
-    if (hide) {
-      elem.style.display="table";
-    } 
-    else {
-      elem.style.display="none";
-    }
-  }
-</script>
-<!-- #### DX CLUSTER HYPERLINK ACTIVATED WIDGET #### -->    
-<div id="myDIV">
-  <iframe id="TableNested1" style="display:none" marginWidth=0 marginHeight=0 src=https://www.hamqsl.com/solar101vhfper.php
-    frameBorder=0 scrolling=no width=600 height=405><a href="https://www.hamqsl.com/shortcut.html" title="Ham Solar Conditions" target="_blank" align="center" ></iframe>
-</div>
 </body>
 </html>
 
