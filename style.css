@@ -50,12 +50,6 @@ ul li::before {
  opacity: 0.5;
 }
 
-.time {
- font-size: 1em;
- opacity: 0.5;
- color: white;
-}
-
 h1,h2,h3{line-height:1.}
 
 h1 {
