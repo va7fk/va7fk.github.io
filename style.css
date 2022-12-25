@@ -45,6 +45,14 @@ ul li::before {
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
+footer {
+	max-width: 600px ;
+	margin-left: auto ;
+	margin-right: auto ;
+	text-align: center ;
+	clear: both ;
+}
+
 .date {
  font-size: 1em;
  opacity: 0.5;
@@ -64,13 +72,13 @@ a {
 
  /* unvisited link MediumPurple or Orange #e67300 */
 a:link {
-  color: #ff3333;
+  color: #cc0000;
   text-decoration: none;
 }
 
 /* visited link  MediumPurple or Orange #e67300 */
 a:visited {
-  color: #ff3333;
+  color: #cc0000;
   text-decoration: none;
 }
 
