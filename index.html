@@ -30,7 +30,7 @@
   var tutc=["UTC"];
     function GetClock(){
   var d=new Date();
-  var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+  var nday=d.getUTCDay(),nmonth=d.getUTCMonth(),ndate=d.getUTCDate(),nyear=d.getFullYear();
   var nhour=d.getUTCHours(),nmin=d.getMinutes();
   if(nmin<=9) nmin="0"+nmin
 
