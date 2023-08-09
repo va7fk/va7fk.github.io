@@ -18,21 +18,11 @@
 <p><b>VA7FK is an amateur radio station located in British Columbia, Canada. The station is also licensed under the callsign VE7JUR.</b></p>
 <p><b>BM & TGIF DMR ID: 3021414 / DAPNET ID: VA7FK</b></p>
 <!-- UTC Clock -->
-<!-- <h3 class="date"><div id="clockbox" style="text-align:left;"></div></h3> -->
-
-<h3 class="date"><a href="" id="time_is_link" rel="nofollow" >Time in UTC:</a></h3>
-<span id="UTC_za00" style="font-size:36px"></span>
-<script src="//widget.time.is/t.js"></script>
-<script>
-time_is_widget.init({UTC_za00:{time_format:"hours:minutes"}});
-</script>
-
+<h3 class="date"><div id="clockbox" style="text-align:left;"></div></h3>
 <p> <a href="https://form.jotform.com/201201516309138">Contact</a> <!-- &nbsp;|&nbsp; <a href="links.html">Radio Web Links</a></p> -->
 <hr style="height: 10px; visibility:hidden;" />
 <img src="images/W1A1_Schedule.png" class="center" style="width:65%">
-<!-- <img src="images/73_shack.jpg" class="center" style="width:45%"> -->
-
-<!--
+<!-- <img src="images/73_shack.jpg" class="center" style="width:45%"> -->   
 <script>
 // UTC Clock
   var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
@@ -41,7 +31,7 @@ time_is_widget.init({UTC_za00:{time_format:"hours:minutes"}});
     function GetClock(){
   var d=new Date();
   var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
-  var nhour=d.getHours(),nmin=d.getMinutes();
+  var nhour=d.getUTCHours(),nmin=d.getMinutes();
   if(nmin<=9) nmin="0"+nmin
 
   var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+" "+tutc+"";
@@ -51,7 +41,6 @@ time_is_widget.init({UTC_za00:{time_format:"hours:minutes"}});
   GetClock();
     setInterval(GetClock,1000);
 </script>
--->
 </body>
 </html>
 
